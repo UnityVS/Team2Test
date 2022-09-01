@@ -311,12 +311,6 @@
     <Reference Include="Newtonsoft.Json">
       <HintPath>Library\PackageCache\com.unity.nuget.newtonsoft-json@3.0.2\Runtime\Newtonsoft.Json.dll</HintPath>
     </Reference>
-    <Reference Include="Unity.Android.Types">
-      <HintPath>C:\Program Files\Unity\Hub\Editor\2021.3.8f1\Editor\Data\PlaybackEngines\AndroidPlayer\Unity.Android.Types.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.Android.Gradle">
-      <HintPath>C:\Program Files\Unity\Hub\Editor\2021.3.8f1\Editor\Data\PlaybackEngines\AndroidPlayer\Unity.Android.Gradle.dll</HintPath>
-    </Reference>
     <Reference Include="netstandard">
       <HintPath>C:\Program Files\Unity\Hub\Editor\2021.3.8f1\Editor\Data\NetStandard\ref\2.1.0\netstandard.dll</HintPath>
     </Reference>
@@ -683,6 +677,12 @@
     <Reference Include="System.Xml.Serialization">
       <HintPath>C:\Program Files\Unity\Hub\Editor\2021.3.8f1\Editor\Data\NetStandard\compat\2.1.0\shims\netfx\System.Xml.Serialization.dll</HintPath>
     </Reference>
+    <Reference Include="UnityEditor.UI">
+      <HintPath>Library\ScriptAssemblies\UnityEditor.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UI">
+      <HintPath>Library\ScriptAssemblies\UnityEngine.UI.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="Unity.VisualScripting.Flow.Editor.csproj">
@@ -737,10 +737,6 @@
       <Project>{F94A3D80-E363-281F-52F5-F9426353513E}</Project>
       <Name>Unity.VisualScripting.Flow</Name>
     </ProjectReference>
-    <ProjectReference Include="UnityEditor.UI.csproj">
-      <Project>{44319E72-A869-DF6F-5586-3CA71C2779A8}</Project>
-      <Name>UnityEditor.UI</Name>
-    </ProjectReference>
     <ProjectReference Include="Unity.PlasticSCM.Editor.csproj">
       <Project>{FE2BC924-42AB-60B0-9CF5-E0CDDFFC5451}</Project>
       <Name>Unity.PlasticSCM.Editor</Name>
@@ -748,10 +744,6 @@
     <ProjectReference Include="Unity.Rider.Editor.csproj">
       <Project>{60FDC731-344A-81B2-6279-146B33714C74}</Project>
       <Name>Unity.Rider.Editor</Name>
-    </ProjectReference>
-    <ProjectReference Include="UnityEngine.UI.csproj">
-      <Project>{A1D383ED-99A0-0CC9-300F-905ACC544FB6}</Project>
-      <Name>UnityEngine.UI</Name>
     </ProjectReference>
     <ProjectReference Include="Unity.Services.Core.csproj">
       <Project>{71074BDF-A83D-FE10-063C-CCA6C75122BC}</Project>
