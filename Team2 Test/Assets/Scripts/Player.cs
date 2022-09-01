@@ -14,7 +14,14 @@ public class Player : MonoBehaviour
     {
         if (Input.GetAxis("Horizontal") != 0 || Input.GetAxis("Vertical") != 0)
         {
-            rb.velocity = new Vector3(Input.GetAxis("Horizontal") * Time.deltaTime * playerSpeed, 0, Input.GetAxis("Vertical") * Time.deltaTime * playerSpeed);
+            rb.velocity = new Vector3(Input.GetAxis("Horizontal") * Time.deltaTime * playerSpeed, rb.velocity.y, Input.GetAxis("Vertical") * Time.deltaTime * playerSpeed);
+        }
+    }
+    public void OnCollisionEnter(Collision collision)
+    {
+        if (collision.gameObject.name == "Step")
+        {
+            rb.AddForce(0, 55, 0, ForceMode.Acceleration);
         }
     }
 }
