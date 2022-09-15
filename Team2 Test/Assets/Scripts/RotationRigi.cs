@@ -7,22 +7,36 @@ public class RotationRigi : MonoBehaviour
     public Rigidbody Worm;
     public Rigidbody WormWheel;
     private CalculationSpeedRotation _calculationSpeedRotation;
+    public int DirectionValue=-1;
+    
 
 
     private void Start()
     {
         _calculationSpeedRotation = FindObjectOfType<CalculationSpeedRotation>();
     }
-    private void Update()
+    private void FixedUpdate()
     {
         CalculateSpeedRotation();
         Debug.Log("Speed Worm Wheel " + _calculationSpeedRotation.SpeedWormWheel);
+
     }
 
     private void CalculateSpeedRotation()
     {
-        Worm.AddRelativeTorque(transform.up * _calculationSpeedRotation.SpeedWorm * Time.deltaTime);
-        WormWheel.AddRelativeTorque(transform.forward * _calculationSpeedRotation.SpeedWormWheel * Time.deltaTime);
+        Worm.angularVelocity = transform.right * _calculationSpeedRotation.SpeedWorm * Time.fixedDeltaTime* DirectionValue;
+        WormWheel.angularVelocity =transform.forward * _calculationSpeedRotation.SpeedWormWheel * Time.fixedDeltaTime* DirectionValue;
 
+    }
+
+    public void ChangeDirectionValueClockwise()
+    {
+        DirectionValue = -1;
+    }
+
+    public void ChangeDirectionValueCounterClockwise()
+
+    {
+        DirectionValue = 1;
     }
 }
