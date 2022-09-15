@@ -32,6 +32,7 @@ public class CalculationSpeedRotation : MonoBehaviour
         CanvasGearRatio.text = "Передаточное отношение: " + GearRatio.ToString();
         CanvasSpeedWorm.text = "Пикладываемый момент: " + SpeedWorm.ToString();
         CanvasWheelSpeedWorm.text = "Выходной момент: " + SpeedWormWheel.ToString();
+        
     }
 
     public float СalculationGearRatio(float numberOfWormWheelWeeth, float numberWormVisit)

@@ -933,6 +933,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Worm: {fileID: 1725127187}
   WormWheel: {fileID: 891110065}
+  _calculationSpeedRotation: {fileID: 1174966525}
   DirectionValue: -1
 --- !u!114 &504279168
 MonoBehaviour:
@@ -2746,6 +2747,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   RoadRunPiece: []
   RoadRunPiecePref: {fileID: 7009825970436825280, guid: 6ae0b52c3fded024c92ccba32efcbf1e, type: 3}
+  _calculationSpeedRotation: {fileID: 1174966525}
 --- !u!1 &1528110270
 GameObject:
   m_ObjectHideFlags: 0

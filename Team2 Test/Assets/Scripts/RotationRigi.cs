@@ -9,8 +9,6 @@ public class RotationRigi : MonoBehaviour
     private CalculationSpeedRotation _calculationSpeedRotation;
     public int DirectionValue=-1;
     
-
-
     private void Start()
     {
         _calculationSpeedRotation = FindObjectOfType<CalculationSpeedRotation>();
@@ -21,14 +19,12 @@ public class RotationRigi : MonoBehaviour
     {
         CalculateSpeedRotation();
         Debug.Log("Speed Worm Wheel " + _calculationSpeedRotation.SpeedWormWheel);
-
     }
 
     private void CalculateSpeedRotation()
     {
         Worm.angularVelocity = transform.right * _calculationSpeedRotation.SpeedWorm * Time.fixedDeltaTime* DirectionValue;
         WormWheel.angularVelocity =transform.forward * _calculationSpeedRotation.SpeedWormWheel * Time.fixedDeltaTime* DirectionValue;
-
     }
 
     public void ChangeDirectionValueClockwise()
@@ -37,7 +33,6 @@ public class RotationRigi : MonoBehaviour
     }
 
     public void ChangeDirectionValueCounterClockwise()
-
     {
         DirectionValue = 1;
     }
