@@ -6,13 +6,13 @@ using UnityEngine.UI;
 [ExecuteAlways]
 public class CalculationSpeedRotation : MonoBehaviour
 {
-    public int NumberOfWormWheelWeeth = 2; // Z2 - количесвто  зубьев червячного колеса входящие в зацепление
+    public float NumberOfWormWheelWeeth = 2; // Z2 - количесвто  зубьев червячного колеса входящие в зацепление
     [Range(1, 4)]
-    public int NumberWormVisit=1;  // Z1 - количесвто заходов червяка
+    public float NumberWormVisit=1;  // Z1 - количесвто заходов червяка
 
     //Формула для расчета передаточного чилса U =Z2/Z1, в червячном зацеплении передаточное число раавно передаточному отношению
 
-    public int GearRatio { get; set; }
+    public float GearRatio { get; set; }
 
     public float SpeedWorm;
     public float SpeedWormWheel { get; set; }
@@ -34,13 +34,18 @@ public class CalculationSpeedRotation : MonoBehaviour
         CanvasWheelSpeedWorm.text = "Выходной момент: " + SpeedWormWheel.ToString();
     }
 
-    public int СalculationGearRatio(int numberOfWormWheelWeeth, int numberWormVisit)
+    public float СalculationGearRatio(float numberOfWormWheelWeeth, float numberWormVisit)
     {
-        GearRatio = numberOfWormWheelWeeth / numberWormVisit;
-        return GearRatio;
+        GearRatio = (float)(numberOfWormWheelWeeth / numberWormVisit);
+        if (numberOfWormWheelWeeth <= 0)
+        {
+            GearRatio = 0.1f;
+        }
+            return GearRatio;
+       
     }
 
-    public float CalculateSpeedRotate(float speedWorm, int gearRatio)
+    public float CalculateSpeedRotate(float speedWorm, float gearRatio)
     {      
         SpeedWormWheel = speedWorm / gearRatio;
         return SpeedWormWheel;
