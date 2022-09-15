@@ -6,14 +6,15 @@ using UnityEngine.UI;
 [ExecuteAlways]
 public class CalculationSpeedRotation : MonoBehaviour
 {
-    public float NumberOfWormWheelWeeth = 2; // Z2 - количесвто  зубьев червячного колеса входящие в зацепление
-    [Range(1, 4)]
+    public float NumberOfWormWheelTooth = 2; // Z2 - количесвто  зубьев червячного колеса входящие в зацепление
+    public float MinNumberOfWormWheelTooth = 1;
+    public float MaxNumberOfWormWheelTooth = 30;
     public float NumberWormVisit=1;  // Z1 - количесвто заходов червяка
-
+    public float MinNumberWormVisit = 1;
+    public float MaxNumberWormVisit = 6;
     //Формула для расчета передаточного чилса U =Z2/Z1, в червячном зацеплении передаточное число раавно передаточному отношению
 
     public float GearRatio { get; set; }
-
     public float SpeedWorm;
     public float SpeedWormWheel { get; set; }
 
@@ -25,25 +26,23 @@ public class CalculationSpeedRotation : MonoBehaviour
 
     private void Update()
     {
-        СalculationGearRatio(NumberOfWormWheelWeeth, NumberWormVisit);
+        СalculationGearRatio(NumberOfWormWheelTooth, NumberWormVisit);
         CalculateSpeedRotate(SpeedWorm, GearRatio);
-        CanvasNumberOfWormWheelWeeth.text =  NumberOfWormWheelWeeth.ToString();
+        CanvasNumberOfWormWheelWeeth.text =  NumberOfWormWheelTooth.ToString();
         CanvasNumberWormVisit.text =   NumberWormVisit.ToString();
         CanvasGearRatio.text = "Передаточное отношение: " + GearRatio.ToString();
         CanvasSpeedWorm.text = "Пикладываемый момент: " + SpeedWorm.ToString();
-        CanvasWheelSpeedWorm.text = "Выходной момент: " + SpeedWormWheel.ToString();
-        
+        CanvasWheelSpeedWorm.text = "Выходной момент: " + SpeedWormWheel.ToString();       
     }
 
     public float СalculationGearRatio(float numberOfWormWheelWeeth, float numberWormVisit)
     {
-        GearRatio = (float)(numberOfWormWheelWeeth / numberWormVisit);
-        if (numberOfWormWheelWeeth <= 0)
-        {
-            GearRatio = 0.1f;
-        }
+        GearRatio = Mathf.Clamp(numberOfWormWheelWeeth,MinNumberOfWormWheelTooth,MaxNumberOfWormWheelTooth)/ Mathf.Clamp(numberWormVisit,MinNumberWormVisit,MaxNumberWormVisit);
+       // if (numberOfWormWheelWeeth <= 0)
+       // {
+       //     GearRatio = 0.1f;
+      //  }
             return GearRatio;
-       
     }
 
     public float CalculateSpeedRotate(float speedWorm, float gearRatio)
@@ -53,31 +52,6 @@ public class CalculationSpeedRotation : MonoBehaviour
     }
 
 
-    public void IncreaseNumberOfWormWheelWeeth()
-    {
-        NumberOfWormWheelWeeth++;
-    }
-    public void DecreaseNumberOfWormWheelWeeth()
-    {
-        NumberOfWormWheelWeeth--;
-    }
-    public void IncreaseNumberWormVisit()
-    {
-        NumberWormVisit ++;
-    }
-    public void DecreaseNumberWormVisit()
-    {
-        NumberWormVisit--;
-    }
-
-    public void IncreaseSpeedWorm()
-    {
-        SpeedWorm += 25f;
-    }
-    public void DecreasSpeedWorm()
-    {
-        SpeedWorm -= 25f;
-    }
 
    
 }

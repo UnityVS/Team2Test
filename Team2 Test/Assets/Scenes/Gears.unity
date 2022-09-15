@@ -910,7 +910,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 504279169}
-  - component: {fileID: 504279168}
   - component: {fileID: 504279167}
   m_Layer: 0
   m_Name: NewWorm Rigi
@@ -933,28 +932,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Worm: {fileID: 1725127187}
   WormWheel: {fileID: 891110065}
-  _calculationSpeedRotation: {fileID: 1174966525}
   DirectionValue: -1
---- !u!114 &504279168
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 504279166}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a93a23a31d529d344946d48f18e16c17, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  NumberOfWormWheelWeeth: 10
-  NumberWormVisit: 2
-  SpeedWorm: 10
-  CanvasNumberOfWormWheelWeeth: {fileID: 0}
-  CanvasNumberWormVisit: {fileID: 0}
-  CanvasGearRatio: {fileID: 0}
-  CanvasSpeedWorm: {fileID: 0}
-  CanvasWheelSpeedWorm: {fileID: 0}
 --- !u!4 &504279169
 Transform:
   m_ObjectHideFlags: 0
@@ -2747,7 +2725,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   RoadRunPiece: []
   RoadRunPiecePref: {fileID: 7009825970436825280, guid: 6ae0b52c3fded024c92ccba32efcbf1e, type: 3}
-  _calculationSpeedRotation: {fileID: 1174966525}
 --- !u!1 &1528110270
 GameObject:
   m_ObjectHideFlags: 0
@@ -3762,26 +3739,6 @@ Transform:
   m_Father: {fileID: 2050518093548248178}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
---- !u!114 &1848063003
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7438506223079647115}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a93a23a31d529d344946d48f18e16c17, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  NumberOfWormWheelWeeth: 10
-  NumberWormVisit: 2
-  SpeedWorm: 10
-  CanvasNumberOfWormWheelWeeth: {fileID: 0}
-  CanvasNumberWormVisit: {fileID: 0}
-  CanvasGearRatio: {fileID: 0}
-  CanvasSpeedWorm: {fileID: 0}
-  CanvasWheelSpeedWorm: {fileID: 0}
 --- !u!114 &1848063005
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4563,7 +4520,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2669185740388382077}
-  - component: {fileID: 1848063003}
   - component: {fileID: 1848063005}
   m_Layer: 0
   m_Name: NewWorm
