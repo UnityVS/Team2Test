@@ -14,6 +14,8 @@ public class RotationRigi : MonoBehaviour
     private void Start()
     {
         _calculationSpeedRotation = FindObjectOfType<CalculationSpeedRotation>();
+        WormWheel.maxAngularVelocity = Mathf.Infinity;
+        Worm.maxAngularVelocity = Mathf.Infinity;
     }
     private void FixedUpdate()
     {

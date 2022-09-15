@@ -17,6 +17,7 @@ public class RunRoad : MonoBehaviour
         for (int i = 0; i < 30; i++)
         {
             GameObject newPieceRoadRun = Instantiate(RoadRunPiecePref, transform.position + new Vector3(i + 0.2f, 0, 0), transform.rotation);
+            newPieceRoadRun.GetComponent<Rigidbody>().maxAngularVelocity = Mathf.Infinity;
             RoadRunPiece.Add(newPieceRoadRun.GetComponent<Rigidbody>());
         }
     }

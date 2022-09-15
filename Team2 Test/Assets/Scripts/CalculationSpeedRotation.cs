@@ -20,14 +20,18 @@ public class CalculationSpeedRotation : MonoBehaviour
     [SerializeField] Text CanvasNumberOfWormWheelWeeth;
     [SerializeField] Text CanvasNumberWormVisit;
     [SerializeField] Text CanvasGearRatio;
+    [SerializeField] Text CanvasSpeedWorm;
+    [SerializeField] Text CanvasWheelSpeedWorm;
 
     private void Update()
     {
         СalculationGearRatio(NumberOfWormWheelWeeth, NumberWormVisit);
         CalculateSpeedRotate(SpeedWorm, GearRatio);
-        CanvasNumberOfWormWheelWeeth.text = "Rоличесвто  зубьев червячного колеса, входящих в зацепление: "+ NumberOfWormWheelWeeth.ToString();
-        CanvasNumberWormVisit.text = "Количесвто заходов червяка: " + NumberWormVisit.ToString();
+        CanvasNumberOfWormWheelWeeth.text =  NumberOfWormWheelWeeth.ToString();
+        CanvasNumberWormVisit.text =   NumberWormVisit.ToString();
         CanvasGearRatio.text = "Передаточное отношение: " + GearRatio.ToString();
+        CanvasSpeedWorm.text = "Пикладываемый момент: " + SpeedWorm.ToString();
+        CanvasWheelSpeedWorm.text = "Выходной момент: " + SpeedWormWheel.ToString();
     }
 
     public int СalculationGearRatio(int numberOfWormWheelWeeth, int numberWormVisit)
