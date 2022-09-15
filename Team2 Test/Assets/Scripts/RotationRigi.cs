@@ -2,10 +2,10 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Rotation : MonoBehaviour
+public class RotationRigi : MonoBehaviour
 {
-    public Transform Worm;
-    public Transform WormWheel;
+    public Rigidbody Worm;
+    public Rigidbody WormWheel;
     private CalculationSpeedRotation _calculationSpeedRotation;
 
 
@@ -21,8 +21,8 @@ public class Rotation : MonoBehaviour
 
     private void CalculateSpeedRotation()
     {
-        Worm.Rotate(transform.up * _calculationSpeedRotation.SpeedWorm * Time.deltaTime);
-        WormWheel.Rotate(transform.forward * _calculationSpeedRotation.SpeedWormWheel * Time.deltaTime);
+        Worm.AddRelativeTorque(transform.up * _calculationSpeedRotation.SpeedWorm * Time.deltaTime);
+        WormWheel.AddRelativeTorque(transform.forward * _calculationSpeedRotation.SpeedWormWheel * Time.deltaTime);
 
     }
 }
