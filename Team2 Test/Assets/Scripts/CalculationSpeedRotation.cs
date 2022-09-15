@@ -30,7 +30,7 @@ public class CalculationSpeedRotation : MonoBehaviour
 
     public float CalculateSpeedRotate(float speedWorm, int gearRatio)
     {      
-        SpeedWormWheel = speedWorm * gearRatio;
+        SpeedWormWheel = speedWorm / gearRatio;
         return SpeedWormWheel;
     }
 }
