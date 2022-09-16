@@ -12,19 +12,24 @@ public class ButtonManager : MonoBehaviour
     public Button NumberWormVisitUp;
     public Button NumberWormVisitDown;
 
+    public Slider SliderWormWheel;
+    public Slider SliderSpeedWorm;
+    public Slider SliderWorm;
+
     private void Awake()
     {
         _calculationSpeedRotation = FindObjectOfType<CalculationSpeedRotation>();
+        SliderWormWheel.minValue = _calculationSpeedRotation.MinNumberOfWormWheelTooth;
+        SliderWormWheel.maxValue = _calculationSpeedRotation.MaxNumberOfWormWheelTooth;
+        SliderSpeedWorm.minValue = -3000f;
+        SliderSpeedWorm.maxValue = 3000f;
+        SliderWorm.minValue = _calculationSpeedRotation.MinNumberWormVisit;
+        SliderWorm.maxValue = _calculationSpeedRotation.MaxNumberWormVisit;
+
+
     }
 
-    private void Update()
-    {
-        InteractableButtonsNumberOfWormWheelWeeth();
-        InteractableButtonsNumberWormVisit();
-    }
-
-
-    public void InteractableButtonsNumberOfWormWheelWeeth()
+   /* public void InteractableButtonsNumberOfWormWheelWeeth()
     {
         if (_calculationSpeedRotation.NumberOfWormWheelTooth == _calculationSpeedRotation.MaxNumberOfWormWheelTooth)
         {
@@ -43,9 +48,9 @@ public class ButtonManager : MonoBehaviour
         {
             NumberOfWormWheelWeethDown.interactable = true;
         }
-    }
+    }*/
 
-    public void InteractableButtonsNumberWormVisit()
+   /* public void InteractableButtonsNumberWormVisit()
     {
         if (_calculationSpeedRotation.NumberWormVisit == _calculationSpeedRotation.MaxNumberWormVisit)
         {
@@ -64,32 +69,33 @@ public class ButtonManager : MonoBehaviour
             NumberWormVisitDown.interactable = true;
         }
     
-    }
+    }*/
     public void IncreaseNumberOfWormWheelWeeth()
     {
-        _calculationSpeedRotation.NumberOfWormWheelTooth++;
+        //_calculationSpeedRotation.NumberOfWormWheelTooth++;
+        _calculationSpeedRotation.NumberOfWormWheelTooth = SliderWormWheel.value;
     }
-    public void DecreaseNumberOfWormWheelWeeth()
+   /* public void DecreaseNumberOfWormWheelWeeth()
     {
         _calculationSpeedRotation.NumberOfWormWheelTooth--;
-    }
+    }*/
     public void IncreaseNumberWormVisit()
     {
-        _calculationSpeedRotation.NumberWormVisit++;
+        _calculationSpeedRotation.NumberWormVisit = SliderWorm.value;
+        //_calculationSpeedRotation.NumberWormVisit++;
     }
-    public void DecreaseNumberWormVisit()
+   /* public void DecreaseNumberWormVisit()
     {
         _calculationSpeedRotation.NumberWormVisit--;
-    }
+    }*/
 
     public void IncreaseSpeedWorm()
     {
-        _calculationSpeedRotation.SpeedWorm += 25f;
+        // _calculationSpeedRotation.SpeedWorm += 25f;
+        _calculationSpeedRotation.SpeedWorm = SliderSpeedWorm.value;
     }
-    public void DecreasSpeedWorm()
+    /*public void DecreasSpeedWorm()
     {
         _calculationSpeedRotation.SpeedWorm -= 25f;
-    }
-
-
-}
+   }*/
+ }
