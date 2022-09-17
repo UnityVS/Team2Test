@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 
@@ -38,6 +39,10 @@ public class CalculationSpeedRotation : MonoBehaviour
         CanvasGearRatio.text = "Передаточное отношение: " + GearRatio.ToString();
         CanvasSpeedWorm.text = "Начальная угловая скорость: " + (SpeedWorm * 9.5).ToString("0") + " об/мин";
         CanvasWheelSpeedWorm.text = "Выходная угловая скорость: " + (SpeedWormWheel * 9.5).ToString("0") + " об/мин";
+        if (Input.GetKeyDown(KeyCode.Escape))
+        {
+            ApplicationClose();
+        }
     }
     void CheckWarningZone()
     {
@@ -69,6 +74,14 @@ public class CalculationSpeedRotation : MonoBehaviour
         return GearRatio;
     }
 
+    public void ApplicationClose()
+    {
+        Application.Quit();
+    }
+    public void RepeatScene()
+    {
+        SceneManager.LoadScene(1);
+    }
     public float CalculateSpeedRotate(float speedWorm, float gearRatio)
     {
         SpeedWormWheel = speedWorm / gearRatio;
