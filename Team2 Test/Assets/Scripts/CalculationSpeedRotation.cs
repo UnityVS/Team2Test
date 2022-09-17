@@ -14,6 +14,7 @@ public class CalculationSpeedRotation : MonoBehaviour
     public float NumberWormVisit { get; set; } = 1;  // Z1 - количесвто заходов червяка
     public float MinNumberWormVisit = 1;
     public float MaxNumberWormVisit = 6;
+    [SerializeField] GameObject _lightBulb;
     
 
     public float GearRatio { get; set; } //Расчет передаточного чилса U =Z2/Z1, в червячном зацеплении передаточное число раавно передаточному отношению, так написано в интернете))
@@ -25,16 +26,32 @@ public class CalculationSpeedRotation : MonoBehaviour
     [SerializeField] TextMeshProUGUI CanvasGearRatio;
     [SerializeField] TextMeshProUGUI CanvasSpeedWorm;
     [SerializeField] TextMeshProUGUI CanvasWheelSpeedWorm;
-
+ 
     private void Update()
     {
         СalculationGearRatio(NumberOfWormWheelTooth, NumberWormVisit);
         CalculateSpeedRotate(SpeedWorm, GearRatio);
+        CheckWarningZone();
         CanvasNumberOfWormWheelWeeth.text =  NumberOfWormWheelTooth.ToString();
         CanvasNumberWormVisit.text =   NumberWormVisit.ToString();
         CanvasGearRatio.text = "Передаточное отношение: " + GearRatio.ToString();
         CanvasSpeedWorm.text = "Начальная угловая скорость: " + (SpeedWorm*9.5).ToString("0") + " об/мин";
         CanvasWheelSpeedWorm.text = "Выходная угловая скорость: " + (SpeedWormWheel*9.5).ToString("0") + " об/мин";       
+    }
+    void CheckWarningZone()
+    {
+        if (SpeedWorm*9.5 < 5000)
+        {
+            _lightBulb.GetComponent<LightDangerous>()._status = 0;
+        }
+        if (SpeedWorm * 9.5 < 15000 && SpeedWorm * 9.5 > 5000)
+        {
+            _lightBulb.GetComponent<LightDangerous>()._status = 1;
+        }
+        if (SpeedWorm * 9.5 > 25000)
+        {
+            _lightBulb.GetComponent<LightDangerous>()._status = 2;
+        }
     }
 
     public float СalculationGearRatio(float numberOfWormWheelWeeth, float numberWormVisit)
