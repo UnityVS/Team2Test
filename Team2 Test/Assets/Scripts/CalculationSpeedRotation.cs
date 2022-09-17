@@ -51,17 +51,17 @@ public class CalculationSpeedRotation : MonoBehaviour
             _criticalMessage.SetActive(false);
             _lightBulb.GetComponent<LightDangerous>()._status = 3;
         }
-        if (SpeedWormWheel * 9.5 < 25000 && SpeedWormWheel * 9.5 != 0)
+        if (SpeedWormWheel * 9.5 < 25000 && SpeedWormWheel * 9.5 != 0 || SpeedWormWheel * 9.5 > -25000 && SpeedWormWheel * 9.5 != 0)
         {
             _criticalMessage.SetActive(false);
             _lightBulb.GetComponent<LightDangerous>()._status = 0;
         }
-        if (SpeedWormWheel * 9.5 < 35000 && SpeedWormWheel * 9.5 > 25000)
+        if (SpeedWormWheel * 9.5 < 35000 && SpeedWormWheel * 9.5 > 25000 || SpeedWormWheel * 9.5 > -35000 && SpeedWormWheel * 9.5 < -25000)
         {
             _criticalMessage.SetActive(false);
             _lightBulb.GetComponent<LightDangerous>()._status = 1;
         }
-        if (SpeedWormWheel * 9.5 > 35000)
+        if (SpeedWormWheel * 9.5 > 35000 || SpeedWormWheel * 9.5 < -35000)
         {
             _criticalMessage.SetActive(true);
             _lightBulb.GetComponent<LightDangerous>()._status = 2;
