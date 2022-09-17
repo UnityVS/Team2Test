@@ -2138,6 +2138,7 @@ GameObject:
   - component: {fileID: 6805186605198317271}
   - component: {fileID: 7224822310210796020}
   - component: {fileID: 5128224869892465473}
+  - component: {fileID: 7224822310210796021}
   m_Layer: 0
   m_Name: Worm Half1
   m_TagString: Untagged
@@ -2215,6 +2216,7 @@ GameObject:
   - component: {fileID: 1199348977697797236}
   - component: {fileID: 5479961326579188797}
   - component: {fileID: 3785261853157776451}
+  - component: {fileID: 5479961326579188798}
   m_Layer: 0
   m_Name: Wheel
   m_TagString: Untagged
@@ -2273,6 +2275,20 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4538952041850576736}
   m_Mesh: {fileID: -2309305249758762421, guid: 689f2a9bc1bc6b243a4b2624292d9334, type: 3}
+--- !u!114 &5479961326579188798
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4538952041850576736}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: be7a6c7588044ae49959a3542c0fe330, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _rotateionOrientation: 0
+  _speed: 40
 --- !u!4 &6805186605198317271
 Transform:
   m_ObjectHideFlags: 0
@@ -2296,6 +2312,20 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2078979378666101324}
   m_Mesh: {fileID: 3787079996593934493, guid: 689f2a9bc1bc6b243a4b2624292d9334, type: 3}
+--- !u!114 &7224822310210796021
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2078979378666101324}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: be7a6c7588044ae49959a3542c0fe330, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _rotateionOrientation: 1
+  _speed: 40
 --- !u!4 &7426114964445790168
 Transform:
   m_ObjectHideFlags: 0
