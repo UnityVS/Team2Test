@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class AddCargo : MonoBehaviour
@@ -11,7 +9,7 @@ public class AddCargo : MonoBehaviour
 
     public void CreateCargo()
     {
-        Vector3 Rand = new Vector3(0, 0, Random.Range(-7, -12));
+        Vector3 Rand = new Vector3(0, 0, Random.Range(-6, -11));
         if (Random.Range(1, 4) == 1)
         {
             Instantiate(CubePref, transform.position+ Rand, transform.rotation);
@@ -28,7 +26,5 @@ public class AddCargo : MonoBehaviour
         {
             Instantiate(CilinderPref, transform.position + Rand, transform.rotation);
         }
-
-
     }
 }

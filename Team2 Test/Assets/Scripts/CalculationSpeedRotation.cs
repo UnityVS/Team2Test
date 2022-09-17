@@ -1,7 +1,9 @@
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
+
 
 [ExecuteAlways]
 public class CalculationSpeedRotation : MonoBehaviour
@@ -18,11 +20,11 @@ public class CalculationSpeedRotation : MonoBehaviour
     public float SpeedWorm;
     public float SpeedWormWheel { get; set; }
 
-    [SerializeField] Text CanvasNumberOfWormWheelWeeth;
-    [SerializeField] Text CanvasNumberWormVisit;
-    [SerializeField] Text CanvasGearRatio;
-    [SerializeField] Text CanvasSpeedWorm;
-    [SerializeField] Text CanvasWheelSpeedWorm;
+    [SerializeField] TextMeshProUGUI CanvasNumberOfWormWheelWeeth;
+    [SerializeField] TextMeshProUGUI CanvasNumberWormVisit;
+    [SerializeField] TextMeshProUGUI CanvasGearRatio;
+    [SerializeField] TextMeshProUGUI CanvasSpeedWorm;
+    [SerializeField] TextMeshProUGUI CanvasWheelSpeedWorm;
 
     private void Update()
     {
@@ -31,8 +33,8 @@ public class CalculationSpeedRotation : MonoBehaviour
         CanvasNumberOfWormWheelWeeth.text =  NumberOfWormWheelTooth.ToString();
         CanvasNumberWormVisit.text =   NumberWormVisit.ToString();
         CanvasGearRatio.text = "Передаточное отношение: " + GearRatio.ToString();
-        CanvasSpeedWorm.text = "Начальная угловая скорость: " + (SpeedWorm*9.5).ToString() + " об/мин";
-        CanvasWheelSpeedWorm.text = "Выходная угловая скорость: " + (SpeedWormWheel*9.5).ToString() + " об/мин";       
+        CanvasSpeedWorm.text = "Начальная угловая скорость: " + (SpeedWorm*9.5).ToString("0") + " об/мин";
+        CanvasWheelSpeedWorm.text = "Выходная угловая скорость: " + (SpeedWormWheel*9.5).ToString("0") + " об/мин";       
     }
 
     public float СalculationGearRatio(float numberOfWormWheelWeeth, float numberWormVisit)
