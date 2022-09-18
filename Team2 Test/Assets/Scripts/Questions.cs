@@ -16,6 +16,7 @@ public class Questions : MonoBehaviour
     [SerializeField] TextMeshProUGUI _buttonStart;
     [SerializeField] TextMeshProUGUI _textSuccess;
     [SerializeField] TextMeshProUGUI _textFail;
+    [SerializeField] TextMeshProUGUI _gameEnd;
     CalculationSpeedRotation _calculationSpeedRotation;
     int _tutorial = 0;
     List<int> _exitPower = new List<int>() { 2700, 30000, 25000, 700, 300 };
@@ -91,6 +92,7 @@ public class Questions : MonoBehaviour
             }
             if (_missionID == _missions.Count)
             {
+                _gameEnd.gameObject.SetActive(true);
                 FullCloseMissions();
                 PlayerPrefs.SetInt(nameof(_missionID), _missions.Count);
                 return;
