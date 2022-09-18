@@ -835,7 +835,7 @@ MonoBehaviour:
   CubePref: {fileID: 8663479342278278266, guid: 24b31c569f7d3d6439f3f9507a348ad4, type: 3}
   SpherePref: {fileID: 8663479342278278266, guid: 8b7e2ee5d9380894b8dd4b13bb44b3e6, type: 3}
   CapsulePref: {fileID: 5358032021604532800, guid: d5543ebb066e03645b8022d8d5555b48, type: 3}
-  CilinderPref: {fileID: 6732366258958951423, guid: a05f86021638e0148bcb13a809cbd133, type: 3}
+  CilinderPref: {fileID: 190956505292586997, guid: d9e2c36f39b2c614197a3394e3a69214, type: 3}
 --- !u!4 &93642862
 Transform:
   m_ObjectHideFlags: 0
@@ -8444,7 +8444,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "\u041F\u043E\u0432\u0442\u043E\u0440\n"
+  m_Text: "\u0421\u0431\u0440\u043E\u0441"
 --- !u!222 &1550050307
 CanvasRenderer:
   m_ObjectHideFlags: 0
