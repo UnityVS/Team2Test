@@ -36,7 +36,7 @@ public class CalculationSpeedRotation : MonoBehaviour
         CheckWarningZone();
         CanvasNumberOfWormWheelWeeth.text = NumberOfWormWheelTooth.ToString();
         CanvasNumberWormVisit.text = NumberWormVisit.ToString();
-        CanvasGearRatio.text = "Передаточное отношение: " + GearRatio.ToString();
+        CanvasGearRatio.text = "Передаточное отношение: " + GearRatio.ToString("0.0");
         CanvasSpeedWorm.text = "Начальная угловая скорость: " + (SpeedWorm * 9.5).ToString("0") + " об/мин";
         CanvasWheelSpeedWorm.text = "Выходная угловая скорость: " + (SpeedWormWheel * 9.5).ToString("0") + " об/мин";
         if (Input.GetKeyDown(KeyCode.Escape))
