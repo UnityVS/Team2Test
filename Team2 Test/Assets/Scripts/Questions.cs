@@ -80,7 +80,7 @@ public class Questions : MonoBehaviour
             _textFail.gameObject.SetActive(false);
             _textSuccess.gameObject.SetActive(false);
         }
-        if (_exitPower.Count != _missionID && _exitPower[_missionID] > _calculationSpeedRotation.SpeedWormWheel * 9.4f && _exitPower[_missionID] < _calculationSpeedRotation.SpeedWormWheel * 9.6f || _exitPower.Count == _missionID && _calculationSpeedRotation.SpeedWormWheel * 9.4f == _exitPower[_missionID])
+        if (_exitPower.Count != _missionID && _exitPower[_missionID] > _calculationSpeedRotation.SpeedWormWheel * 9.4f && _exitPower[_missionID] < _calculationSpeedRotation.SpeedWormWheel * 9.6f || _exitPower.Count == _missionID+1 && _calculationSpeedRotation.SpeedWormWheel * 9.4f == _exitPower[_missionID])
         {
             _missions[_missionID].gameObject.SetActive(false);
             _missionID++;
