@@ -7,6 +7,7 @@ public class RotationRigi : MonoBehaviour
     public Rigidbody Worm;
     public Rigidbody WormWheel;
     private CalculationSpeedRotation _calculationSpeedRotation;
+    
 
 
     private void Start()
@@ -26,5 +27,6 @@ public class RotationRigi : MonoBehaviour
         Worm.angularVelocity = -transform.right * _calculationSpeedRotation.SpeedWorm * Time.fixedDeltaTime;
         WormWheel.angularVelocity = -transform.forward * _calculationSpeedRotation.SpeedWormWheel * Time.fixedDeltaTime;
     }
+    
 }
 
