@@ -7,6 +7,8 @@ public class AddCargo : MonoBehaviour
     public GameObject CapsulePref;
     public GameObject CilinderPref;
 
+    [SerializeField] GameObject _narative;
+
     public void CreateCargo()
     {
         Vector3 Rand = new Vector3(0, 0, Random.Range(-5, -10));
@@ -26,5 +28,9 @@ public class AddCargo : MonoBehaviour
         {
             Instantiate(CilinderPref, transform.position + Rand, transform.rotation);
         }
+    }
+    public void ExitWindow()
+    {
+        _narative.gameObject.SetActive(false);
     }
 }
