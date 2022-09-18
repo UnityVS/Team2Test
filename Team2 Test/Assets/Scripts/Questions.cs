@@ -18,7 +18,7 @@ public class Questions : MonoBehaviour
     [SerializeField] TextMeshProUGUI _textFail;
     CalculationSpeedRotation _calculationSpeedRotation;
     int _tutorial = 0;
-    List<int> _exitPower = new List<int>() { 2700, 30000, 25000, 0 };
+    List<int> _exitPower = new List<int>() { 2700, 30000, 25000, 700, 300 };
     void Start()
     {
         _narrativID = PlayerPrefs.GetInt(nameof(_narrativID));
@@ -80,7 +80,7 @@ public class Questions : MonoBehaviour
             _textFail.gameObject.SetActive(false);
             _textSuccess.gameObject.SetActive(false);
         }
-        if (_exitPower.Count != _missionID && _exitPower[_missionID] > _calculationSpeedRotation.SpeedWormWheel * 9.4f && _exitPower[_missionID] < _calculationSpeedRotation.SpeedWormWheel * 9.6f || _exitPower.Count == _missionID+1 && _calculationSpeedRotation.SpeedWormWheel * 9.4f == _exitPower[_missionID])
+        if (_exitPower.Count != _missionID && _exitPower[_missionID] > _calculationSpeedRotation.SpeedWormWheel * 9.4f && _exitPower[_missionID] < _calculationSpeedRotation.SpeedWormWheel * 9.6f)
         {
             _missions[_missionID].gameObject.SetActive(false);
             _missionID++;
