@@ -6,7 +6,6 @@ using UnityEngine.UI;
 
 public class ReplayText : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler
 {
-    [SerializeField] GameObject _firstText;
     [SerializeField] GameObject _replayText;
 
     
@@ -14,12 +13,10 @@ public class ReplayText : MonoBehaviour, IPointerEnterHandler, IPointerExitHandl
     public void OnPointerExit(PointerEventData eventData)
     {
         _replayText.SetActive(false);
-        _firstText.SetActive(true);
     }
 
     public void OnPointerEnter(PointerEventData eventData)
     {
         _replayText.SetActive(true);
-        _firstText.SetActive(false);
     }
 }
