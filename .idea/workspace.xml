@@ -4,21 +4,179 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5d013167-7ecb-4de0-9da9-d3bb1e628b07" name="Changes" comment="" />
+    <list default="true" id="5d013167-7ecb-4de0-9da9-d3bb1e628b07" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Team2 Test/Assembly-CSharp-Editor.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Team2 Test/Assembly-CSharp-Editor.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Team2 Test/Assembly-CSharp-firstpass.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Team2 Test/Assembly-CSharp-firstpass.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Team2 Test/Assembly-CSharp.Player.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Team2 Test/Assembly-CSharp.Player.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Team2 Test/Assembly-CSharp.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Team2 Test/Assembly-CSharp.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Team2 Test/Unity.CollabProxy.Editor.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Team2 Test/Unity.CollabProxy.Editor.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Team2 Test/Unity.EditorCoroutines.Editor.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Team2 Test/Unity.EditorCoroutines.Editor.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Team2 Test/Unity.InternalAPIEditorBridgeDev.001.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Team2 Test/Unity.InternalAPIEditorBridgeDev.001.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Team2 Test/Unity.Performance.Profile-Analyzer.Editor.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Team2 Test/Unity.Performance.Profile-Analyzer.Editor.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Team2 Test/Unity.PlasticSCM.Editor.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Team2 Test/Unity.PlasticSCM.Editor.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Team2 Test/Unity.Play.Publisher.Editor.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Team2 Test/Unity.Play.Publisher.Editor.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Team2 Test/Unity.Postprocessing.Editor.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Team2 Test/Unity.Postprocessing.Editor.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Team2 Test/Unity.Postprocessing.Runtime.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Team2 Test/Unity.Postprocessing.Runtime.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Team2 Test/Unity.Rider.Editor.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Team2 Test/Unity.Rider.Editor.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Team2 Test/Unity.Services.Core.Analytics.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Team2 Test/Unity.Services.Core.Analytics.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Team2 Test/Unity.Services.Core.Configuration.Editor.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Team2 Test/Unity.Services.Core.Configuration.Editor.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Team2 Test/Unity.Services.Core.Configuration.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Team2 Test/Unity.Services.Core.Configuration.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Team2 Test/Unity.Services.Core.Device.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Team2 Test/Unity.Services.Core.Device.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Team2 Test/Unity.Services.Core.Editor.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Team2 Test/Unity.Services.Core.Editor.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Team2 Test/Unity.Services.Core.Environments.Internal.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Team2 Test/Unity.Services.Core.Environments.Internal.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Team2 Test/Unity.Services.Core.Environments.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Team2 Test/Unity.Services.Core.Environments.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Team2 Test/Unity.Services.Core.Internal.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Team2 Test/Unity.Services.Core.Internal.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Team2 Test/Unity.Services.Core.Networking.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Team2 Test/Unity.Services.Core.Networking.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Team2 Test/Unity.Services.Core.Registration.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Team2 Test/Unity.Services.Core.Registration.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Team2 Test/Unity.Services.Core.Scheduler.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Team2 Test/Unity.Services.Core.Scheduler.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Team2 Test/Unity.Services.Core.Telemetry.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Team2 Test/Unity.Services.Core.Telemetry.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Team2 Test/Unity.Services.Core.Threading.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Team2 Test/Unity.Services.Core.Threading.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Team2 Test/Unity.Services.Core.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Team2 Test/Unity.Services.Core.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Team2 Test/Unity.Settings.Editor.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Team2 Test/Unity.Settings.Editor.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Team2 Test/Unity.TestTools.CodeCoverage.Editor.OpenCover.Model.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Team2 Test/Unity.TestTools.CodeCoverage.Editor.OpenCover.Model.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Team2 Test/Unity.TestTools.CodeCoverage.Editor.OpenCover.Mono.Reflection.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Team2 Test/Unity.TestTools.CodeCoverage.Editor.OpenCover.Mono.Reflection.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Team2 Test/Unity.TestTools.CodeCoverage.Editor.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Team2 Test/Unity.TestTools.CodeCoverage.Editor.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Team2 Test/Unity.TextMeshPro.Editor.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Team2 Test/Unity.TextMeshPro.Editor.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Team2 Test/Unity.TextMeshPro.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Team2 Test/Unity.TextMeshPro.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Team2 Test/Unity.Timeline.Editor.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Team2 Test/Unity.Timeline.Editor.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Team2 Test/Unity.Timeline.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Team2 Test/Unity.Timeline.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Team2 Test/Unity.VSCode.Editor.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Team2 Test/Unity.VSCode.Editor.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Team2 Test/Unity.VisualScripting.Core.Editor.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Team2 Test/Unity.VisualScripting.Core.Editor.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Team2 Test/Unity.VisualScripting.Core.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Team2 Test/Unity.VisualScripting.Core.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Team2 Test/Unity.VisualScripting.Flow.Editor.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Team2 Test/Unity.VisualScripting.Flow.Editor.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Team2 Test/Unity.VisualScripting.Flow.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Team2 Test/Unity.VisualScripting.Flow.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Team2 Test/Unity.VisualScripting.SettingsProvider.Editor.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Team2 Test/Unity.VisualScripting.SettingsProvider.Editor.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Team2 Test/Unity.VisualScripting.Shared.Editor.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Team2 Test/Unity.VisualScripting.Shared.Editor.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Team2 Test/Unity.VisualScripting.State.Editor.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Team2 Test/Unity.VisualScripting.State.Editor.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Team2 Test/Unity.VisualScripting.State.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Team2 Test/Unity.VisualScripting.State.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Team2 Test/Unity.VisualStudio.Editor.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Team2 Test/Unity.VisualStudio.Editor.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Team2 Test/UnityEditor.TestRunner.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Team2 Test/UnityEditor.TestRunner.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Team2 Test/UnityEngine.TestRunner.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Team2 Test/UnityEngine.TestRunner.csproj" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="mergeConflict1" />
+      </map>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RESET_MODE" value="MIXED" />
+  </component>
+  <component name="ProjectId" id="2EwK5V9WtIpfiVqp2UQTb1OLPvW" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/Сектр/Desktop/GAME/Team2Test&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  }
+}</component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="5d013167-7ecb-4de0-9da9-d3bb1e628b07" name="Changes" comment="" />
+      <created>1663501023708</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1663501023708</updated>
+      <workItem from="1663501024824" duration="3423000" />
+    </task>
     <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
       <map>
+        <entry key="96522e9a-2eeb-42bc-b930-06c7702562c2">
+          <value>
+            <State>
+              <option name="SHOW_ONLY_AFFECTED_CHANGES" value="true" />
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="HEAD" />
+                      </list>
+                    </value>
+                  </entry>
+                  <entry key="roots">
+                    <value>
+                      <list>
+                        <option value="$PROJECT_DIR$" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
+          </value>
+        </entry>
         <entry key="MAIN">
           <value>
             <State />
+          </value>
+        </entry>
+        <entry key="e9c20975-22ce-43de-bdd3-00156b613da4">
+          <value>
+            <State>
+              <option name="SHOW_ONLY_AFFECTED_CHANGES" value="true" />
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="mergeConflict1" />
+                      </list>
+                    </value>
+                  </entry>
+                  <entry key="structure">
+                    <value>
+                      <list>
+                        <option value="dir:C:/Users/Сектр/Desktop/GAME/Team2Test/Team2 Test" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="OPEN_GENERIC_TABS">
+      <map>
+        <entry key="96522e9a-2eeb-42bc-b930-06c7702562c2" value="TOOL_WINDOW" />
+        <entry key="e9c20975-22ce-43de-bdd3-00156b613da4" value="TOOL_WINDOW" />
+      </map>
+    </option>
+    <option name="RECENT_FILTERS">
+      <map>
+        <entry key="Branch">
+          <value>
+            <list>
+              <RecentGroup>
+                <option name="FILTER_VALUES">
+                  <option value="mergeConflict1" />
+                </option>
+              </RecentGroup>
+            </list>
           </value>
         </entry>
       </map>
