@@ -834,7 +834,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   CubePref: {fileID: 8663479342278278266, guid: 24b31c569f7d3d6439f3f9507a348ad4, type: 3}
   SpherePref: {fileID: 8663479342278278266, guid: 8b7e2ee5d9380894b8dd4b13bb44b3e6, type: 3}
-  CapsulePref: {fileID: 1261308868024632698, guid: 3fccfed55fb3f3f4aa9210729ed6ff1c, type: 3}
+  CapsulePref: {fileID: 5358032021604532800, guid: d5543ebb066e03645b8022d8d5555b48, type: 3}
   CilinderPref: {fileID: 6732366258958951423, guid: a05f86021638e0148bcb13a809cbd133, type: 3}
 --- !u!4 &93642862
 Transform:
@@ -6268,7 +6268,7 @@ RectTransform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1048428917}
   m_LocalRotation: {x: 0.25000006, y: 0.25000006, z: -0.06698733, w: 0.9330127}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: -0.46}
   m_LocalScale: {x: 0.04, y: 0.04, z: 0.04}
   m_ConstrainProportionsScale: 0
   m_Children:
