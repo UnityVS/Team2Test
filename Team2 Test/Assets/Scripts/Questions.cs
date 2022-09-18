@@ -118,6 +118,6 @@ public class Questions : MonoBehaviour
         PlayerPrefs.SetInt(nameof(_tutorial), 0);
         PlayerPrefs.SetInt(nameof(_missionID), 0);
         PlayerPrefs.SetInt(nameof(_narrativID), 0);
-        SceneManager.LoadScene(1);
+        SceneManager.LoadScene(0);
     }
 }
